@@ -1,0 +1,7 @@
+.Navbar {
+  background-color: rgba(30, 120, 172, 0.637);
+}
+#item {
+  display: inline-block;
+  margin-right: 10px;
+}
