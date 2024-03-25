@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Cart from "./cart/Cart";
 const Navbar = () => {
+  
   return (
     <div className="Navbar">
       <ul>
