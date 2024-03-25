@@ -5,7 +5,7 @@ const ItemListContainer = (x) => {
   return (
     <>
         <div id='container'>
-          <div >
+          <div id='productos'>
             <h3>{producto}</h3>
             
             <p>Precio por kg: ${precio}</p>

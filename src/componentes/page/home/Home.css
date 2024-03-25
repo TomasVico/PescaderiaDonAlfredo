@@ -1,5 +1,9 @@
-#titulo{
-    color: blue;
-    text-align: center;
-    
+#titulo {
+  color: blue;
+  text-align: center;
+}
+#containers {
+  display: inline-block;
+  margin: 40px;
+  
 }
