@@ -1,15 +1,18 @@
 import React from 'react'
-
+import './ItemListContainer.css'
 const ItemListContainer = (x) => {
     const {producto,precio}= x
   return (
-    <div>
-        <div>
-            <h1>{producto}</h1>
+    <>
+        <div id='container'>
+          <div >
+            <h3>{producto}</h3>
             
-            <h2>Precio por kg: ${precio}</h2>
+            <p>Precio por kg: ${precio}</p>
+          </div>  
+            <button id='agregar'>Agregar al carrito</button>
         </div>
-    </div>
+    </>
   )
 }
 

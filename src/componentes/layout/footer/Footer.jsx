@@ -6,7 +6,7 @@ const Footer = () => {
       <ul>
         <li id='footer'>Instagram</li>
         <li id='footer'>Facebook</li>
-        <li id='footer'>3425668438</li>
+        
       </ul>
     </div>
   )
