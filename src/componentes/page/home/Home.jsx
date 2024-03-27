@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="Home">
       
-      <ItemListContainer mensaje={"Bienvenidos a Pescadería Don Alfredo"}/>
+      <ItemListContainer greeting={"Bienvenidos a Pescadería Don Alfredo"}/>
     </div>
   );
 };

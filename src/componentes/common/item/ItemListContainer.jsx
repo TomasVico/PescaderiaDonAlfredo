@@ -1,10 +1,10 @@
 import React from 'react'
 import './ItemListContainer.css'
 const ItemListContainer = (x) => {
-    const {mensaje}= x
+    const {greeting}= x
   return (
     <>
-        <h1 style={{ color: 'blue', fontSize: '24px', fontFamily: 'Arial, sans-serif',textAlign:'center' }}>{mensaje}</h1>
+        <h1 style={{ color: 'blue', fontSize: '24px', fontFamily: 'Arial, sans-serif',textAlign:'center' }}>{greeting}</h1>
     </>
   )
 }
