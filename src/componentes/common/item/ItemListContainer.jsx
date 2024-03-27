@@ -1,6 +1,18 @@
 import React from 'react'
 import './ItemListContainer.css'
 const ItemListContainer = (x) => {
+    const {mensaje}= x
+  return (
+    <>
+        <h1 style={{ color: 'blue', fontSize: '24px', fontFamily: 'Arial, sans-serif',textAlign:'center' }}>{mensaje}</h1>
+    </>
+  )
+}
+
+export default ItemListContainer
+
+/*
+const ItemListContainer = (x) => {
     const {producto,precio}= x
   return (
     <>
@@ -15,5 +27,4 @@ const ItemListContainer = (x) => {
     </>
   )
 }
-
-export default ItemListContainer
+*/
