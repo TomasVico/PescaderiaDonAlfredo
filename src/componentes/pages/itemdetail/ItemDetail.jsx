@@ -16,16 +16,16 @@ const ItemDetail = ({item}) => {
       <CardContent>
         
         <Typography gutterBottom variant="h5" component="div">
-          Producto: {item.title}
+          <h3>{item.title}</h3>
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
           Categoría: {item.category}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Descripcíon: {item.description}
+          {item.description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Precio (por kilogramo) : ${item.price}
+          <h4>Precio (por kilogramo) : ${item.price}</h4>
         </Typography>
       </CardContent>
       

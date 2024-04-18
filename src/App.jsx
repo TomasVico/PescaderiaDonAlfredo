@@ -7,6 +7,7 @@ import Cart from './componentes/common/cartwidget/CartWidget';
 import Inicio from './componentes/pages/Inicio/Inicio';
 import ItemDetailContainer from './componentes/pages/itemdetail/ItemDetailContainer';
 import Horarios from './componentes/pages/horarios/Horarios';
+import Checkout from './componentes/pages/checkout/Checkout';
 ;
 
 
@@ -25,6 +26,7 @@ function App() {
               <Route path='/category/:id' element={<ItemListContainer/>}/>
               <Route path='/category' element={<ItemListContainer/>}/>
               <Route path='/horarios' element={<Horarios/>}/>
+              <Route path='/checkout' element={<Checkout/>}/>
               
             
           </Route>
