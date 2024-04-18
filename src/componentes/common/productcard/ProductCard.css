@@ -1,0 +1,12 @@
+.producto{
+    width:300px;
+    margin: 20px;
+    display: inline-block;
+    
+    
+
+}
+.imagen{
+    height: 140px;
+    width: 100%;
+}

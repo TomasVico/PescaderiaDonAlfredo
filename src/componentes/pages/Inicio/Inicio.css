@@ -1,0 +1,11 @@
+.inicio-container {
+    background-image: url(https://res.cloudinary.com/dpvaf6koo/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713409748/Fondo_pescaderia_gjydhu.jpg);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inicio {
+    text-align: center;
+    
+  }

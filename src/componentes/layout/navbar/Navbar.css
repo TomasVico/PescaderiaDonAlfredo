@@ -9,4 +9,16 @@
 }
 #titulo {
   background-color: rgba(30, 120, 172, 0.637);
+  text-align: center;
+  
+  cursor: pointer;
+  color: white;
+}
+.categorias{
+  text-align: center;
+}
+a {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
 }
