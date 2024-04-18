@@ -10,8 +10,8 @@ const Footer = () => {
         
         <ul className="categorias">
           <Link to={"/horarios"}><li id='item'>Horarios</li></Link>
-          <li id='item'>Instagram</li>
           <li id='item'>Whatsapp</li>
+          <Link to={"https://www.instagram.com/donalfredo_pescaderia?igsh=MWl6NG9ybnd5b3dsZA=="}><li id='item'>Instagram</li></Link> 
           
         </ul>
         

@@ -6,6 +6,15 @@
   display: inline-block;
   margin-right: 10px;
   cursor: pointer;
+  background-color: white; 
+  color: rgba(30, 120, 172, 0.637); 
+  border-radius: 20px; 
+  padding: 8px 15px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+#item:hover {
+  background-color: rgba(30, 120, 172, 0.8);
+  color: white; 
 }
 #titulo {
   background-color: rgba(30, 120, 172, 0.637);
