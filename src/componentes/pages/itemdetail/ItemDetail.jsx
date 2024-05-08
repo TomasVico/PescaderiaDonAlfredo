@@ -1,18 +1,19 @@
 import React from 'react'
 import {Card,CardMedia,CardContent,CardActions,Button,Typography} from "@mui/material"
 import "./ItemDetail.css"
+import ContadorContainer from '../../common/contador/ContadorContainer'
 
 
-const ItemDetail = ({item}) => {
+const ItemDetail = ({item, agregarCarrito, inicial}) => {
   
   return (
     <div id='container'>
       <Card className='producto' >
-      <CardMedia
-        className='imagen'
-        image={item.img}
-        title="green iguana"
-      />
+        <CardMedia
+          className='imagen'
+          image={item.img}
+          title={item.title}
+        />
       <CardContent>
         
         <Typography gutterBottom variant="h5" component="div">
@@ -24,14 +25,16 @@ const ItemDetail = ({item}) => {
         <Typography variant="body2" color="text.secondary">
           {item.description}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        
           <h4>Precio (por kilogramo) : ${item.price}</h4>
-        </Typography>
+        
+        <ContadorContainer stock={item.stock} inicial={inicial} agregarCarrito={agregarCarrito} />
       </CardContent>
       
-    </Card>
-      
+      </Card>
+    
     </div>
+    
     
   )
 }

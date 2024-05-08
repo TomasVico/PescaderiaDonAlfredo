@@ -1,26 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import './ItemListContainer.css'
-import { products } from '../../../productsMock'
-import ItemList from './ItemList'
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import "./ItemListContainer.css";
+
+import ItemList from "./ItemList";
+import { db } from "../../../firebaseConfig";
+import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
+import { products } from "../../../productsMock";
+
 const ItemListContainer = () => {
-    const {id}= useParams()
+  const { id } = useParams();
+
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const productsCollection = collection(db, "products");
+    let x = productsCollection;
+    if (id) {
+      x = query(productsCollection, where("category", "==", id));
+    }
+
+    getDocs(x).then((res) => {
+      let newArray = res.docs.map((doc) => {
+        return { id: doc.id, ...doc.data() };
+      });
+      setItems(newArray);
+    });
+  }, [id]);
+  // const addDocProducts = () => {
+  //   let productsCollection=collection(db,"products")
+  //   products.forEach((product)=>addDoc(productsCollection,product))
     
-    const[items,setItems]=useState([])
+  // };
 
-    useEffect(()=>{
-      let productsFiltered = products.filter( product => product.category === id)
+  return (
+    <div>
+      
+      <ItemList items={items} />
+    </div>
+  );
+};
 
-      const getProducts= new Promise ((resolve,reject)=>{
-        let x= true
-        x ? resolve (id ? productsFiltered : products) : reject ("salio mal")})
-        
-      getProducts.then((res)=>{setItems(res)}).catch((e)=>{console.log(e)})
-    },[id])
-    console.log(items)
-
-  return <ItemList items={items}/>
-}
-
-export default ItemListContainer
-
+export default ItemListContainer;

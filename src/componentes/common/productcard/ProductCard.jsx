@@ -8,7 +8,7 @@ const ProductCard = ({title,description,price,category,id,img}) => {
       <CardMedia
         className='imagen'
         image={img}
-        title="green iguana"
+        title={title}
       />
       <CardContent>
         

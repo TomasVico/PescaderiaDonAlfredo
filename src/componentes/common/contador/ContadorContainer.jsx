@@ -1,11 +1,13 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import Contador from './Contador'
-const ContadorContainer = ()=>{
-    const [contador, setContador] = useState ( 0 )
+const ContadorContainer = ({stock,inicial=1,agregarCarrito})=>{
+    const [contador, setContador] = useState ( inicial )
     
     const sumar= ()=>{
-        setContador (contador + 1)
+        if (contador < stock){  
+            setContador (contador + 1)
+        }
     }
     const restar =()=>{
         if (contador > 1){
@@ -14,7 +16,7 @@ const ContadorContainer = ()=>{
         
     }
     
-  return <Contador sumar={sumar} restar={restar} contador={contador}/>
+  return <Contador sumar={sumar} restar={restar} contador={contador} agregarCarrito={agregarCarrito} inicial={inicial}/>
 }
 
 export default ContadorContainer
