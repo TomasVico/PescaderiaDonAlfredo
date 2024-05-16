@@ -1,9 +1,12 @@
+
 .Navbar {
   background-color: rgba(30, 120, 172, 0.637);
-  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  z-index: 1;
 }
-#item {
-  display: inline-block;
+.item {
+  display: flex;
   margin-right: 10px;
   cursor: pointer;
   background-color: white; 
@@ -11,9 +14,12 @@
   border-radius: 20px; 
   padding: 8px 15px; 
   transition: background-color 0.3s, color 0.3s;
+  text-align: center
+  
 }
-#item:hover {
-  background-color: rgba(30, 120, 172, 0.8);
+
+.item:hover {
+  background-color: rgba(120, 8, 165, 0.8);
   color: white; 
 }
 #titulo {
@@ -23,11 +29,42 @@
   cursor: pointer;
   color: white;
 }
-.categorias{
+#categorias {
+  display: block; 
+  align-items: center;
   text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(30, 120, 172, 0.637);
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+#categorias:hover {
+  background-color: rgba(120, 8, 165, 0.8);
+  color:   rgba(255, 255, 255, 0.637);
+  text-align: center;
+  font-size: medium;
+  transition: background-color 1s, color 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a {
   text-decoration: none; 
   color: inherit; 
   cursor: pointer; 
+}
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.desplegable{
+  
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }

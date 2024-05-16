@@ -5,7 +5,8 @@ import "./ItemListContainer.css";
 import ItemList from "./ItemList";
 import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
-import { products } from "../../../productsMock";
+
+import { Skeleton } from "@mui/material";
 
 const ItemListContainer = () => {
   const { id } = useParams();
@@ -26,17 +27,26 @@ const ItemListContainer = () => {
       setItems(newArray);
     });
   }, [id]);
-  // const addDocProducts = () => {
-  //   let productsCollection=collection(db,"products")
-  //   products.forEach((product)=>addDoc(productsCollection,product))
-    
-  // };
+ 
 
   return (
-    <div>
-      
-      <ItemList items={items} />
-    </div>
+    <>
+      {items.length > 0 ? (
+        <ItemList items={items} />
+      ) : (
+        <div style={{display:"flex", gap:"20px"}}>
+          <div>
+            <Skeleton variant="rectangular" width={300} height={210} />
+          </div>
+          <div>
+          <Skeleton variant="rectangular" width={300} height={210} />
+          </div>
+          <div>
+          <Skeleton variant="rectangular" width={300} height={210} />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

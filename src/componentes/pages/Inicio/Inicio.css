@@ -1,6 +1,6 @@
 .inicio-container {
-    background-image: url(https://res.cloudinary.com/dpvaf6koo/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713409748/Fondo_pescaderia_gjydhu.jpg);
-    justify-content: center;
+  background-image: url(https://res.cloudinary.com/dpvaf6koo/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713409748/Fondo_pescaderia_gjydhu.jpg);
+    
     align-items: center;
     height: 100vh;
   }
@@ -8,4 +8,14 @@
   .inicio {
     text-align: center;
     
+  }
+  .descripcion{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  .titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }

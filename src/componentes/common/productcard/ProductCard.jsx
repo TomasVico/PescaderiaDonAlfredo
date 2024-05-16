@@ -6,7 +6,7 @@ const ProductCard = ({title,description,price,category,id,img}) => {
   return (
     <Card className='producto' >
       <CardMedia
-        className='imagen'
+        className='imagenlista'
         image={img}
         title={title}
       />
@@ -25,6 +25,7 @@ const ProductCard = ({title,description,price,category,id,img}) => {
         <Link to={`/ItemDetail/${id}`}>
         <Button size="small">Ver detalle</Button>
         </Link>
+        
     
       </CardActions>
     </Card>

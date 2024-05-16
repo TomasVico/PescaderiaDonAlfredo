@@ -1,13 +1,22 @@
 import React from 'react'
+import "./Contador.css"
 
 const Contador = ({sumar,restar,contador,agregarCarrito, inicial}) => {
   
   return (
-    <div>
-        <button onClick={sumar}>Sumar</button>
-        <h2>{contador}</h2>
-        <button onClick={restar}>Restar</button>
-        <button onClick={()=>agregarCarrito(contador)}>Agregar al carrito</button>
+    <div className='contenidocontador'>
+      <h3>Elige la cantidad que deseas:</h3>
+      <div style={{ textAlign: 'center' }}>
+
+        <button className="boton" onClick={sumar}>Sumar</button>
+        <h2 className='numerocentral'>{contador}</h2>
+        <button className="boton" onClick={restar}>Restar</button>
+        <p><button className="agregar" onClick={()=>agregarCarrito(contador)}>Agregar al carrito</button></p>
+       
+        
+
+        
+      </div>
       
     </div>
   )

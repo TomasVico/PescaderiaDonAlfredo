@@ -1,0 +1,26 @@
+.numerocentral{
+    height: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.boton{
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    width: 100px;
+}
+.contenidocontador{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+}
+.agregar{
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    width: 350px;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom:0
+}

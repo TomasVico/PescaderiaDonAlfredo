@@ -1,0 +1,22 @@
+.horariosh3 {
+  font-style: oblique;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+.horariosp {
+  font-style: italic;
+  color: antiquewhite;
+  box-sizing: border-box;
+  background-color: black;
+}
+.conteiner {
+  position: absolute;
+  left: 450px;
+  top: 150px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  background-image: url('https://res.cloudinary.com/dpvaf6koo/image/upload/v1715696426/40c379d3ec58f8c3150217c42d915c0b_h0ab65.jpg');
+  border-radius: 10px;
+}

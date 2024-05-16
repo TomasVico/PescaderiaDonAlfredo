@@ -1,0 +1,11 @@
+.formulario{
+    margin: 20px;
+    
+}
+.general{
+    text-align: left;
+}
+.orden{
+    text-align: center;
+    border: 1px solid black;
+}

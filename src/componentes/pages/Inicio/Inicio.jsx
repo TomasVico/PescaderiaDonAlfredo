@@ -6,9 +6,9 @@ const Inicio = () => {
   return (
     <div className='inicio-container'>
       <div className='inicio'>
-      <h1>Bienvenidos a pescadería Don Alfredo</h1>
-      <h3>Estamos ubicados en Avenida Luján 2000</h3>
-      <h3>Santo Tomé, Santa Fe</h3>
+      <h1 className='titulo'>Bienvenidos a pescadería Don Alfredo</h1>
+      <h3 className='descripcion'>Realiza tu pedido a través de nuestra nueva página web!</h3>
+      <h3 className='descripcion'>Navegá y chequeá todos los productos que tenemos para ofrecerte a precios increíbles!</h3>
       
       
       </div>

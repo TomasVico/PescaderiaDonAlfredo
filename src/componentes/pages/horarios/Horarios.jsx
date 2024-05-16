@@ -1,12 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./Horarios.css";
 
 const Horarios = () => {
   return (
-    <div>
-        <h4>Horarios: </h4>
-        <p>Lunes a Viernes de 9 a 13 hs y de 16:30 a 20 hs </p>
+    <div className="conteiner">
+      <h3 className="horariosh3">Lunes a Viernes</h3>
+      <p className="horariosp">9 a 13 hs - 16 a 20 hs.</p>
+      <h3 className="horariosh3">Sábados</h3>
+      <p className="horariosp">9 a 13 hs</p>
+      <h3 className="horariosh3">Domingos</h3>
+      <p className="horariosp">CERRADO</p>
     </div>
-  )
-}
+  );
+};
 
-export default Horarios
+export default Horarios;

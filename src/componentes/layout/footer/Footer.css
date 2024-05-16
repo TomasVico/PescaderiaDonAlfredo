@@ -1,26 +1,28 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  
   width: 100%;
   background-color: rgba(30, 120, 172, 0.637);
   color: white;
   text-align: center;
-  padding: 10px 0;
+  z-index: 999;
+  padding: 0; /* Ajusta el padding vertical según sea necesario */
+  font-size: 15px; /* Ajusta el tamaño de la fuente según sea necesario */
 }
 
-  #item {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  #titulo {
-    background-color: rgba(30, 120, 172, 0.637);
-    text-align: center;
-    
-    cursor: pointer;
-    color: white;
-  }
-  .categorias{
-    text-align: center;
-  }
+#item {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#titulo {
+  background-color: rgba(30, 120, 172, 0.637);
+  text-align: center;
+
+  cursor: pointer;
+  color: white;
+}
+.categorias {
+  text-align: center;
+}

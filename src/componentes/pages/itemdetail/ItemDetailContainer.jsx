@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { collection, getDoc, doc } from "firebase/firestore";
 import { CartContext } from "../../../context/CartContext";
 import { db } from "../../../firebaseConfig";
+import"./ItemDetail.css"
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -25,6 +26,8 @@ const ItemDetailContainer = () => {
   const agregarCarrito = (cantidad) => {
     let objetoCompleto = { ...item, quantity: cantidad };
     addToCart(objetoCompleto);
+   
+
   };
 
   return item ? (
